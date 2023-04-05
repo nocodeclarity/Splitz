@@ -27,3 +27,6 @@ To use this smart contract, you can deploy it to a supported blockchain network 
 
 # License
 This Clarity smart contract is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.
+
+# Disclaimer
+It is important to note that the Splitz smart contract has not been audited, the legal implications have not been explored prior to the publishing of this open source Clarity smart contract and the potential tax implications of Splitz may carry varying outputs of fiscal responisbility in various jurisdictions around the world. Use at your own risk. The Splitz smart contract is provided as-is, without any warranties or guarantees of any kind. Before deploying any of these contracts to a production environment, it is crucial to thoroughly test and audit them. The author(s) of this repository are not responsible for any potential issues or losses that may arise from the use or deployment of these contracts.
