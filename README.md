@@ -17,19 +17,13 @@ split-royalties-timed function: A public function that splits the requested roya
 # Usage
 To use this smart contract, you can deploy it to a supported blockchain network such as Stacks 2.0. Once deployed, you can interact with the smart contract through function calls using the Clarity programming language. Here are the available functions and their parameters:
 
-- set-authorized-collaborators(addresses: (buff 20)[]): Sets the list of authorized collaborators' addresses.
++ set-authorized-collaborators(addresses: (buff 20)[]): Sets the list of authorized collaborators' addresses.
 
++ set-max-royalty-amount(amount: uint128): Sets the maximum allowed royalty amount.
 
-- set-max-royalty-amount(amount: uint128): Sets the maximum allowed royalty amount.
++ split-royalties(amount: uint128, addresses: (buff 20)[]): Splits the requested royalty amount equally between the provided addresses.
 
-
-- split-royalties(amount: uint128, addresses: (buff 20)[]): Splits the requested royalty amount equally between the provided addresses.
-
-
-- split-royalties-timed(amount: uint128, addresses: (buff 20)[], interval: uint128): Splits the requested royalty amount equally between the provided addresses over a specified payment interval.
-
-
-- To check the list of authorized collaborators, you can use the authorized-collaborators data variable. To check the maximum allowed royalty amount, you can use the max-royalty-amount data variable. To check if a sender is an authorized collaborator, you can use the authorized-collaborator? function.
++ split-royalties-timed(amount: uint128, addresses: (buff 20)[], interval: uint128): Splits the requested royalty amount equally between the provided addresses over a specified payment interval.
 
 # License
 This Clarity smart contract is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.
